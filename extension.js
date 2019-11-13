@@ -116,6 +116,10 @@ function enable() {
 
   if (settings.get_boolean("show-number-of-notifications")) {
     appendCounter();
+
+    // Remove dot indicator from date menu button
+    let dateMenu = Main.panel.statusArea.dateMenu;
+    dateMenu.get_children()[0].remove_actor(dateMenu.actor._indicator.actor);
   }
 
   let snnSignal = settings.connect(
