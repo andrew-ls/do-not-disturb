@@ -1,6 +1,7 @@
 //
 // This file is part of Do Not Disturb Time, GNOME Shell extension.
 // Copyright (C) 2018 Ilya Murav'jov <muravev@yandex.ru>
+// Modifications (C) 2019 Andrew Steel <dev@andrewsteel.net>
 //
 // This program is free software; you can redistribute it and/or
 // modify it under the terms of the GNU General Public License
@@ -146,7 +147,7 @@ function enable() {
 	- 0 is the position
 	- `right` is the box where we want our button to be displayed (left/center/right)
 	 */
-  Main.panel.addToStatusArea("DoNotDisturbRole", dndButton, 0, "right");
+  Main.panel.addToStatusArea("DoNotDisturbRole", dndButton, 1, "center");
 
   // Menu
   let dndMenu = dndButton.menu;
